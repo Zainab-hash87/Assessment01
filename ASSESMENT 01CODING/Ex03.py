@@ -1,14 +1,15 @@
-name= input ("Enter full name:")
-hometown = input ("Enter hometown:")
+# ask the user to input their name, hometown, and age
+name = input("Enter your full name: ")
+hometown = input("Enter your hometown: ")
+age = input("Enter your age:")
 
-while True:
-    Age = input ("Enter age:")
-    if Age. isdigit():
-        age= int(Age)
-        break
-    else :
-        print("Wrong age. Enter age in number")
+# Store the collected data in a dictionary as key-value pairs
+biography = {
+    "Name": name,
+    "Hometown": hometown,
+    "Age": age
+}
 
-print(f"Name: {name}")
-print(f"Hometown: {hometown}")
-print(f"Age: {age}")
+# Print each value on separate lines using a single print() statement
+print(f"Name: {biography['Name']}\nHometown: {biography['Hometown']}\nAge: {biography['Age']}")
+
