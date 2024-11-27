@@ -1,3 +1,4 @@
+#using dictionary function to create a list of month
 month_days = {
     1: 31,  # January
     2: 28,  # February 
@@ -12,9 +13,10 @@ month_days = {
     11: 30, # November
     12: 31  # December 
 }
-
+#asking user to input a month number 
 month = int(input("Enter the month number (1-12): "))
 
+#using if else statement to verify the user input
 if 1 <= month <= 12:
     if month == 2:  
         year = int(input("Is it a leap year? (Enter 1 for Yes, 0 for No): "))
